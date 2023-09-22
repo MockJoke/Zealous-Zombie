@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8251145159861738415}
   - component: {fileID: 2761527159377342766}
   - component: {fileID: 80235675676122371}
+  - component: {fileID: 4675042062513456138}
   - component: {fileID: 3732498309974292217}
   m_Layer: 0
   m_Name: Zombie2
@@ -143,7 +144,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8736884560996553122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -329,6 +330,51 @@ PolygonCollider2D:
       - {x: -1.09, y: 0.945}
       - {x: -1.11, y: 0.92499995}
   m_UseDelaunayMesh: 0
+--- !u!61 &4675042062513456138
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8736884560996553122}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.26, y: 3.87}
+    newSize: {x: 2.26, y: 3.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.26, y: 3.87}
+  m_EdgeRadius: 0
 --- !u!114 &3732498309974292217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +388,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  ZombieCount: 0
-  can: {fileID: 0}
   WalkSpeed: 2
+  ZombieRb: {fileID: 2761527159377342766}
